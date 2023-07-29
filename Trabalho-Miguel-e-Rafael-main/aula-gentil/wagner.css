@@ -70,18 +70,19 @@ section {
 }
 
 img {
-    width: 200px;
-    float: left;
-    display: block;
-}
-
-p {
-    clear: left;
-
+    min-width: 100px;
+    max-width: 200px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.452);
 }
 
 section>a {
-    display: flex;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+    color: black;
+    font-size: 100%;
     justify-self: center;
     align-items: baseline;
     float: left;
@@ -92,6 +93,7 @@ h2 {
     text-align: center;
     color: black;
     font-size: 3vw;
+    padding: 3vw;
 }
 
 div.form {
@@ -113,14 +115,15 @@ div.form {
 }
 
 form {
-    height: 50vh;
+    height: 30vh;
+    min-width: 300px;
 }
 
 input,
 button {
     -webkit-transition: width .35s ease-in-out;
     transition: width .35s ease-in-out;
-    width: 25vw;
+    width: 40%;
     height: 2.4vw;
     font-size: 2vw;
     border: 0px;
@@ -136,7 +139,7 @@ input {
 
 /*animation input*/
 input:focus {
-    width: 47vw;
+    width: 95%;
     box-shadow: 1px 1px 10px rgb(59, 137, 255);
 }
 
@@ -146,6 +149,7 @@ button {
     width: 47%;
     font-weight: 600;
     position: absolute;
+    overflow-y: hidden;
 }
 
 #term_true {
@@ -155,17 +159,11 @@ button {
     display: inline-block;
 }
 
-label[for="termo"] {
-    padding: 1em;
-    display: inline;
-    font-size: 1.8vw;
-}
-
 /*botão submit*/
 button[type="submit"] {
     background-color: rgb(126, 255, 169);
-    bottom: 1vw;
-    left: 1vw;
+    bottom: 1vh;
+    left: 1vh;
 
 }
 
@@ -178,8 +176,8 @@ button[type="submit"]:hover {
 /*botão reset*/
 button[type="reset"] {
     background-color: rgb(255, 126, 126);
-    bottom: 1vw;
-    right: 1vw;
+    bottom: 1vh;
+    right: 1vh;
 }
 
 button[type="reset"]:hover {
