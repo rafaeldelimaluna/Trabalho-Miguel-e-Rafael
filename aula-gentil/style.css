@@ -68,7 +68,6 @@ section {
     font-family: var(--fonte1);
     font-size: 150%;
     text-indent: 1em;
-    max-width: 700px;
     border-radius: 0.5em;
 }
 
@@ -92,6 +91,7 @@ footer {
 main {
     background-color: var(--primary_color);
     overflow-x: hidden;
+
 }
 
 section {
@@ -143,7 +143,7 @@ div.form {
 }
 
 form {
-    height: 30vh;
+    height: 67vh;
     min-width: 300px;
 }
 
